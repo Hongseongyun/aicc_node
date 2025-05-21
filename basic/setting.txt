@@ -5,3 +5,4 @@
 5. npm install nodemon
 6. npm install pg
 7. npm install cors
+8. npm install dotenv
