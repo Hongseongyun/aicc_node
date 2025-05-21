@@ -1,12 +1,26 @@
 const router = require('express').Router();
 const getRoutes = require('../controllers/getControllers');
 
-router.get('/salesMap', getRoutes.getSalesMap);
-router.get('/visitors', getRoutes.getVisitors);
-router.get('/customers', getRoutes.getCustomers);
-router.get('/target_reality', getRoutes.getTarget_reality);
-router.get('/volume_services', getRoutes.getVolume_services);
-router.get('/top_products', getRoutes.getTop_products);
-router.get('/revenue', getRoutes.getRevenue);
+const routes = [
+  'sales_map',
+  'visitors',
+  'customers',
+  'target_reality',
+  'volume_services',
+  'top_products',
+  'revenue',
+];
+
+routes.forEach((route) => {
+  router.get(
+    `/${route}`,
+    getRoutes[
+      `get${route
+        .split('_')
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join('')}`
+    ]
+  );
+});
 
 module.exports = router;
