@@ -1,0 +1,7 @@
+1. npm init -y : package.jon 생성
+2. index.js 생성 : 메인파일 생성
+3. npm install express : package-lock.json, node_modules 생성
+4. cmd에서 node index.js 로 메인파일 실행
+5. npm install nodemon
+6. npm install pg
+7. npm install cors
