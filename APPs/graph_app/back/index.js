@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/', (request, response) => {
-  response.send('Hello World 12');
+  response.send('Hello Node, This is Root Page!!');
 });
 
 app.use(require('./routes/getRoutes'));

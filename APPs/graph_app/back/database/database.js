@@ -1,7 +1,7 @@
-const { Pool } = require('pg'); //postgres 모듈 저장
-const dotenv = require('dotenv').config();
+const { Pool } = require('pg'); // postgresql 모듈 저장
+require('dotenv').config();
 
-// 연결정보
+// 연결 정보
 const pool = new Pool({
   user: process.env.DB_USER,
   host: process.env.DB_HOST,
