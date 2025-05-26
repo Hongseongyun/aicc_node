@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HeadTitile = ({ title }) => {
+const HeadTitle = ({ title }) => {
   return (
     <div className="block-title">
       <div className="title-wrapper mt-1">
@@ -10,4 +10,4 @@ const HeadTitile = ({ title }) => {
   );
 };
 
-export default HeadTitile;
+export default HeadTitle;

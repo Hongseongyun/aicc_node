@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import HeadTitile from './HeadTitile';
+import HeadTitle from './HeadTitle';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchRevenue } from '../../redux/slices/apiSlice';
 import {
@@ -24,7 +24,7 @@ const Revenue = () => {
 
   return (
     <div className="block-wrap w-full mt-[14px] lg:mt-0">
-      <HeadTitile title={'Total Revenue'} />
+      <HeadTitle title={'Total Revenue'} />
       <div className="bar-chart w-full h-[250px] mt-6">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart

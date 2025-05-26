@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import HeadTitile from './HeadTitile';
+import HeadTitle from './HeadTitle';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCustomers } from '../../redux/slices/apiSlice';
 import {
@@ -43,7 +43,7 @@ const Customers = () => {
 
   return (
     <div className="block-wrap w-full mt-[14px] lg:mt-0">
-      <HeadTitile title={'Customer Satisfaction'} />
+      <HeadTitle title={'Customer Satisfaction'} />
       <div className="area-chart w-full h-[250px]">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart

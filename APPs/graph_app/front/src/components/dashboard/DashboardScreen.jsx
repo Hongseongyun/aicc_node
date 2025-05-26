@@ -4,7 +4,9 @@ import Visitors from './Visitors';
 import Revenue from './Revenue';
 import Customers from './Customers';
 import TargetReality from './TargetReality';
-
+import TopProducts from './TopProducts';
+import SaleMap from './SaleMap';
+import VolumeServices from './VolumeServices';
 const DashboardScreen = () => {
   return (
     <div className="contents-area lg:ml-[calc(20%+14px)] lg:w-[calc(80%-28px)] w-full mt-[14px]">
@@ -16,6 +18,9 @@ const DashboardScreen = () => {
         <Revenue />
         <Customers />
         <TargetReality />
+        <TopProducts />
+        <SaleMap />
+        <VolumeServices />
       </div>
     </div>
   );

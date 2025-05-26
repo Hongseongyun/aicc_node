@@ -20,7 +20,7 @@ const Sidebar = () => {
     <div
       className={`sidebar-wrapper bg-gray-950 py-5 px-4 shadow-[0_0.125rem_0.25rem_rgba(255,255,255,0.3)] lg:w-[20%] md:w-[30%] w-[50%] h-full flex flex-col rounded-sm z-[999] fixed lg:left-0 ${
         isSidebarOpen ? 'left-0' : 'left-[-100%]'
-      }`}
+      } dark:bg-gray-200`}
     >
       <div className="sidebar-top mb-[32px] flex items-center justify-between">
         <div className="sidebar-brand flex items-center justify-center gap-x-[12px]">

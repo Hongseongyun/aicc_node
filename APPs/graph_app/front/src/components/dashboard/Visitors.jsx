@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import HeadTitile from './HeadTitile';
+import HeadTitle from './HeadTitle';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchVisitors } from '../../redux/slices/apiSlice';
 import {
@@ -46,7 +46,7 @@ const Visitors = () => {
 
   return (
     <div className="block-wrap w-full mt-[14px] lg:mt-0">
-      <HeadTitile title="Visitors Insights" />
+      <HeadTitle title="Visitors Insights" />
       <div className="line-chart w-full h-[230px]">
         {state !== null && (
           <ResponsiveContainer width="100%" height="100%">

@@ -1,5 +1,5 @@
 import React from 'react';
-import HeadTitile from './HeadTitile';
+import HeadTitle from './HeadTitle';
 import { Icons } from '../../assets/icons';
 import { SALES_LISTS } from '../../constants/menuLists';
 
@@ -7,7 +7,7 @@ const Sales = () => {
   return (
     <div className="block-wrap w-full">
       <div className="block-head flex items-center justify-between">
-        <HeadTitile title="Today's Sales" />
+        <HeadTitle title="Today's Sales" />
         <div className="export-bin flex items-center gap-[6px] border border-solid border-gray-500 rounded-lg py-[2px] px-2 font-semibold">
           <button>
             <img src={Icons.ExportDark} alt="" className="invert-[1]" />

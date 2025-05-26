@@ -5,6 +5,7 @@ import { setSidebarOpen } from '../../redux/slices/sidebarSlice';
 import AppbarLang from './AppbarLang';
 import { Icons } from '../../assets/icons';
 import AppberProfile from './AppberProfile';
+import ModeControlls from './ModeControlls';
 
 const Appbar = () => {
   const dispatch = useDispatch();
@@ -39,6 +40,7 @@ const Appbar = () => {
             <span className="w-2 h-2 bg-red-600 rounded-full absolute top-1 right-2"></span>
           </button>
           <AppberProfile />
+          <ModeControlls />
         </div>
       </div>
     </div>

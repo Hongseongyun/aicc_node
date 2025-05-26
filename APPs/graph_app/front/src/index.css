@@ -6,7 +6,7 @@
 @import 'tailwindcss';
 
 /* 다크모드를 수동으로 제어, 요소가 dark 클래스를 직접 가지고 있거나 그의 후손 요소인 경우에 dark: 변형이 동작한다. */
-@custom-variant dark (&:where(.dark .dark *));
+@custom-variant dark (&:where(.dark, .dark *));
 
 html {
   scroll-behavior: smooth;
@@ -89,4 +89,18 @@ ul {
   padding-left: 4px;
   font-size: 14px;
   margin-top: 5px;
+}
+
+/* Top Products Table Style */
+.tbl-title {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  border-bottom: 1px solid #f0f9ff;
+  text-align: left;
+}
+
+.tbl-data {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
 }
