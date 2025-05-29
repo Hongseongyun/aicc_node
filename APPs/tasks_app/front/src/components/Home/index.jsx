@@ -5,8 +5,8 @@ import ItemPanel from '../Common/ItemPanel';
 const index = () => {
   return (
     <div className="page_section">
-      <Navbar activeIdx={0} />
-      <ItemPanel pageTitle="All Items" />
+      <Navbar />
+      <ItemPanel pageTitle="All Items" filteredCompleted="all" />
     </div>
   );
 };
